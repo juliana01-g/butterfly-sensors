@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Butterfly Wing Architectures Inspire Applications</title>
+  <style>
+    body {
+  font-family: 'Times New Roman', serif;
+  margin: 0;
+  background: url('fondo2.png') no-repeat center center fixed, #f4f8fb;
+  background-size: cover;
+  color: #333;
+}
+    header {
+      position: relative;
+      background: linear-gradient(90deg, #9966FF, #33FF66, #3399FF);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      overflow: hidden;
+
+    }
+    .butterfly {
+      position: absolute;
+      top: 30px;
+      left: 20px;
+      width: 150px;
+      height: auto;
+      z-index: 10;
+    }
+.butterfly2 {
+  position: absolute;
+  top: 100px;
+  left: 900px; 
+  width: 150px;
+  height: auto;
+  z-index: 10;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 30%; 
+}
+    nav { background: #9966FF; display: flex; flex-wrap: wrap; justify-content: center; }
+    nav button { background: none; border: none; color: white; padding: 15px 20px; font-size: 17px; cursor: pointer; }
+    nav button:hover { background: #9933FF; }
+    section { display: none; padding: 40px 20px; max-width: 1100px; margin: auto; animation: fade 0.5s; }
+    section.active { display: block; }
+    h2 { color: #0099FF ; }
+    h3 { color: #33CCFF; }
+    img.content-img { width: 100%; max-width: 600px; margin: 20px auto; display: block; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    ul { list-style: disc inside; }
+
+#audios, #explanatory-audios {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.audio-block {
+  margin-bottom: 40px;
+}
+
+.audio-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre audio e imagen */
+  margin-top: 10px;
+}
+
+.audio-row audio {
+  width: 300px;
+  max-width: 90%;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #9966FF, #33FF66, #3399FF);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  outline: none;
+  padding: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el audio */
+.audio-row audio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+.audio-row img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="mariposa.gif" class="butterfly">
+<img src="mariposa2.gif" class="butterfly2">
+
+  <h1>Butterfly Wing Architectures Inspire Sensor and Energy Applications</h1>
+  <p>Based on Maurice I. Osotsi et al. (2020)</p>
+</header>
+
+<nav>
+  <button onclick="showSection('intro')">Introduction</button>
+  <button onclick="showSection('architecture')">Wing Architectures</button>
+  <button onclick="showSection('sensors')">Sensors</button>
+  <button onclick="showSection('energy')">Energy Applications</button>
+  <button onclick="showSection('conclusions')">Conclusions</button>
+  <button onclick="showSection('explanatory audios')">Explanatory Audios</button>
+
+</nav>
+
+<section id="intro" class="active">
+  <h2>Introduction</h2>
+  <p>Natural biological systems continuously evolve to solve environmental and survival challenges. Examples include the thermal insulation of polar bear fur and the dynamic color changes of chameleons. Butterflies have particularly unique wing architectures with complex micro- and nanostructures that interact with light and respond to stimuli like temperature, humidity, and chemicals.</p>
+  <p>The specific design of butterfly wing scales has inspired innovative developments in fields such as sensors and sustainable energy technologies. Their natural capabilities for selective reflection, light manipulation, and responsiveness are being used to address energy shortages, pollution, and climate change.</p>
+  <img src="introduccion.png" class="center-image">
+</section>
+
+<section id="architecture">
+  <h2>Wing Scale Architectures</h2>
+  <p>Butterfly wings consist of layered scales made up of intricate hierarchical structures. These can be classified into five categories:</p>
+
+  <h3>1. Unspecialized Microarchitectures</h3>
+  <p>These feature simple ridges without specialized modifications. They typically exhibit absorptive coloration due to the random distribution of pigments like melanin. An example is the black wings of <em>Achalarus lyciades</em>.</p>
+
+  <h3>2. Ridge-Specialized Microarchitectures</h3>
+  <p>These scales have complex ridge structures that influence light reflection and coloration. Examples include:</p>
+  <ul>
+    <li><em>Urania ripheus</em> - multi-layered ridges producing vivid colors.</li>
+    <li><em>Parides sesostris</em> - thin film interference structures for green coloration.</li>
+  </ul>
+
+  <h3>3. Windows with Porous Lumen Microarchitectures</h3>
+  <p>Scales with perforations that create partially transparent wings, common in glasswing butterflies like <em>Greta oto</em>. These structures minimize light reflection, producing transparency through nanoscale modifications.</p>
+
+  <h3>4. Body-Lamellae Microarchitectures</h3>
+  <p>In these, the lamellae are disordered and fill the scale lumen, enabling a high surface area with strong scattering properties. Found in <em>Colias eurytheme</em>.</p>
+
+  <h3>5. 3D Photonic Crystal Microarchitectures</h3>
+  <p>Three-dimensional gyroid structures found inside the scales that manipulate light at the nanoscale, creating brilliant iridescence. Species like <em>Thecla opisena</em> and some <em>Morpho</em> butterflies possess these sophisticated architectures.</p>
+
+  <img src="arquitectura.png" alt="Wing Categories Example" class="center-image">
+</section>
+
+<section id="sensors">
+  <h2>Sensors Inspired by Butterfly Wings</h2>
+  <p>Butterfly wing structures have inspired several types of advanced sensors:</p>
+
+  <h3>Thermal Sensors</h3>
+  <p>Thermal sensors bioinspired by butterfly wings leverage the micro/nanostructures of wing scales (which facilitate interaction with light) to transform temperature changes into visual signals. In some experimental approaches, the wing is used directly, saturated with ethanol, and sealed. The principle is based on thermal expansion/contraction and refractive index modification. An example is the thermochromic sensor using Papilio ulysses wings and ethanol, where increasing temperature volatilizes the ethanol, reversibly and visibly altering the wing color. This type of sensor aligns with the applications discussed in the paper, in the sensors section.</p>
+
+<img src="termico.png" alt="Sensors Inspired by Wings"  class="center-image">
+
+  <h3>Medical Sensors</h3>
+  <p>Butterfly-wing-inspired medical biosensors, such as the Morpho menelaus-based wearable device, integrate microfluidic systems and electronic networks directly onto the wing structure. This design allows for simultaneous monitoring of biochemical markers (such as AD7c-NTP proteins and IgG) and physiological signals associated with neurodegenerative diseases, such as Alzheimer's and Parkinson's. The device uses the wing structure as a support to detect the fluorescence intensity of the aforementioned indicator proteins and measure wrist bending resistance, providing data on tremors or stiffness. The collected data can be comprehensively analyzed using a smartphone, facilitating disease monitoring and management.</p>
+
+<img src="medico.png" alt="Sensors Inspired by Wings"  class="center-image">
+
+
+  <h3>Vapor Sensors</h3>
+  <p>In the C/TiO2 vapor sensor with Papilio paris wings, the honeycomb-like porous architecture of the wing facilitates vapor diffusion, and the small grain size of the TiO2 improves sensitivity. This results in a high specific surface area and excellent response to benzene and dimethylbenzene vapor, enabling the visual detection and quantification of these compounds. Additionally, Morpho didius wings have been used in the detection of chemical warfare agents (CWAs), specifically dimethyl methylphosphonate (a nerve agent simulant) and dichloropentane (a mustard gas simulant) vapors. The periodic architecture of Morpho didius wings reflects visible light, allowing the reflectance of each analyte to be measured in parts per million to improve CWA detection. The sensitivity of the wing architecture and its responsiveness to refractive index are important properties in these sensor applications.</p>
+
+<img src="vapor.png" alt="Sensors Inspired by Wings"  class="center-image">
+
+  <h3>Anti-Counterfeit Security Devices</h3>
+  <p>Anti-counterfeiting security devices are inspired by the intricate wing structure of Morpho butterflies. These wings have microstructures that interact with light to create iridescent colors. Scientists mimic this structure by creating a film with two different layers, similar to Morpho wings. When this film is rotated, the way light is reflected and scattered creates patterns that are either revealed or hidden, like a QR code. Thus, the natural complexity of Morpho wings provides a model for creating a form of visual verification that is difficult to copy, making products easier to authenticate.</p>
+
+<img src="segurudad.png" alt="Sensors Inspired by Wings"  class="center-image">
+
+</section>
+
+<section id="energy">
+  <h2>Energy Applications Inspired by Butterfly Wings</h2>
+  <p>The hierarchical structures of butterfly wings are inspiring innovations in energy technologies:</p>
+
+  <h3>Photocatalysis Applications</h3>
+  <p>Inspired by butterfly wings, photocatalysis uses wing nanostructures as a model to create materials that clean pollution with light. By copying these structures, photocatalysts with a large surface area and many active sites are fabricated, accelerating the decomposition of pollutants. One example is the CdS/Au photocatalyst, inspired by the wings of Morpho didius, where the copied 3D structure of the wings facilitates better light absorption and more efficient charge transfer, resulting in higher hydrogen production and good stability during repeated use.</p>
+
+<img src="foto.png" alt="Sensors Inspired by Wings"  class="center-image">
+
+  <h3>Energy Harvesting Applications</h3>
+  <p>Inspired by butterfly wings, energy harvesting has advanced thanks to biophotosynthetic architectures that have allowed for the creation of more efficient photovoltaic materials. Mimicking the wings of the black butterfly Pachliopta aristolochiae, photovoltaic active layers with nanoholes have been developed that increase sunlight absorption by up to 90%, holding promise for thin solar cells. Furthermore, a butterfly-inspired triboelectric nanogenerator (B-TENG) has been created, using a four-bar system with springs, to capture the multidirectional energy of water waves, replicating the way a butterfly's wings interact with the air.</p>
+
+<img src="harvesting.png" alt="Sensors Inspired by Wings"  class="center-image">
+
+  <h3>Energy Storage Applications</h3>
+  <p>Aplicaciones de almacenamiento de energía: Inspirándose en las alas de mariposa, se han logrado avances en los sistemas de almacenamiento de energía, particularmente en el diseño de electrodos de alto rendimiento. Las alas de la especie Parides sesostris destacan por sus microarquitecturas jerárquicas tridimensionales, que ofrecen una gran área superficial ideal para la fabricación de electrodos. El proceso consiste en carbonizar estas alas, lo que resulta en carbono dopado con nitrógeno (N). Este material posee numerosos sitios activos que mejoran significativamente la capacidad de almacenamiento de energía de los electrodos resultantes. La estructura jerárquica de las alas proporciona una extensa superficie para acomodar más iones, mientras que la adición de nitrógeno a la estructura de carbono crea sitios activos adicionales que facilitan la unión y el intercambio de iones, mejorando así el rendimiento general del almacenamiento de energíay.</p>
+
+ <img src="storage.png" alt="Sensors Inspired by Wings"  class="center-image">
+</section>
+
+<section id="conclusions"style="flex-direction: column; align-items: center;">
+  <h2>Conclusions</h2>
+  <p>Butterfly wing architectures demonstrate how nature’s micro- and nanostructures can inspire cutting-edge technological solutions. Advances in sensors, energy harvesting, and energy storage devices based on these structures are contributing to sustainable technological development, addressing environmental and societal needs efficiently.</p>
+</section>
+
+
+<section id="explanatory audios">
+  <h2>Explanatory Audios</h2>
+
+  <div class="audio-block">
+    <h3>The Wisdom of Nature: What is Biomimicry?</h3>
+    <div class="audio-row">
+      <audio controls>
+        <source src="Grabación1.m4a" type="audio/mpeg">
+      </audio>
+      <img src="biometica.jpeg" alt="Biomimicry">
+    </div>
+  </div>
+
+  <div class="audio-block">
+    <h3>The Hidden Art in Butterfly Wings</h3>
+    <div class="audio-row">
+      <audio controls>
+        <source src="Grabación1.m4a" type="audio/mpeg">
+      </audio>
+      <img src="alas.jpg" alt="Butterfly Wings">
+    </div>
+  </div>
+
+  <div class="audio-block">
+    <h3>From Wings to Sensors: Technological Inspiration</h3>
+    <div class="audio-row">
+      <audio controls>
+        <source src="Grabación1.m4a" type="audio/mpeg">
+      </audio>
+      <img src="sensores.jpg" alt="Sensors">
+    </div>
+  </div>
+
+  <div class="audio-block">
+    <h3>Other Inventions That Nature Gave Us</h3>
+    <div class="audio-row">
+      <audio controls>
+        <source src="Grabación1.m4a" type="audio/mpeg">
+      </audio>
+      <img src="ejemplo.png" alt="Nature Inventions">
+    </div>
+  </div>
+
+  <div class="audio-block">
+    <h3>Another Sustainable Future: Biomimicry as a Solution</h3>
+    <div class="audio-row">
+      <audio controls>
+        <source src="Grabación1.m4a" type="audio/mpeg">
+      </audio>
+      <img src="futuro.jpeg" alt="Future Solutions">
+    </div>
+  </div>
+
+</section>
+
+
+<script>
+function showSection(id) {
+  document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
+
+
